@@ -1,0 +1,14 @@
+.three_cards {
+    &__card {
+        padding: 2rem 1.5rem;
+        height: 100%;
+        font-weight: var(--fw-600);
+        display: grid;
+        grid-template-rows: auto 1fr;
+        img {
+            max-width: 100px;
+            display: block;
+            margin-left: auto;
+        }
+    }
+}

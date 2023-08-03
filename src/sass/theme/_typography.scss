@@ -1,0 +1,77 @@
+/* Poppins-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  /* Poppins-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+    font-variant-ligatures: none;
+}
+
+html {
+    font-size: var(--fs-400);
+}
+
+body {
+    font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: var(--fw-400);
+    font-size: 1rem;
+    font-style: normal;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .h99 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+    font-weight: var(--fw-900);
+}
+
+h1, .h1 {
+    font-size: var(--fs-900);
+    letter-spacing: 0.04rem;
+}
+h2, .h2 {
+    font-size: var(--fs-800);
+    line-height: 1.15;
+}
+h3, .h3 {
+    font-size: var(--fs-600);
+}
+
+.fs-7 {
+    font-size: 0.889rem;
+}
+
+strong, b {
+    font-weight: var(--fw-900);
+}
+
+.dot {
+    &::after {
+        content: ".";
+        color: var(--col-green-400);
+    }
+}

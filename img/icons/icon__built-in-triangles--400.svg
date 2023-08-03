@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.61 146.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00af66;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon class="cls-1" points="21.93 4.77 .39 43.46 43.47 43.46 21.93 4.77"/>
+      <polygon class="cls-1" points="74.19 4.77 52.65 43.46 95.73 43.46 74.19 4.77"/>
+      <polygon class="cls-1" points="125.07 4.77 103.53 43.46 146.61 43.46 125.07 4.77"/>
+      <polygon class="cls-1" points="21.93 57.03 .39 95.72 43.47 95.72 21.93 57.03"/>
+      <path class="cls-1" d="m96.11,95.95h-43.86l21.93-39.39,21.93,39.39Zm-42.74-.65h41.63l-20.81-37.4-20.82,37.4Z"/>
+      <polygon class="cls-1" points="125.07 57.03 103.53 95.72 146.61 95.72 125.07 57.03"/>
+      <path class="cls-1" d="m43.86,142.25H0l21.93-39.4,21.93,39.4Zm-42.74-.65h41.63l-20.82-37.4L1.11,141.6Z"/>
+      <polygon class="cls-1" points="74.19 103.33 52.65 142.02 95.73 142.02 74.19 103.33"/>
+      <polygon class="cls-1" points="125.07 103.33 103.53 142.02 146.61 142.02 125.07 103.33"/>
+    </g>
+    <rect class="cls-2" width="146.32" height="146.32"/>
+  </g>
+</svg>

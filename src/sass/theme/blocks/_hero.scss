@@ -1,0 +1,41 @@
+header.hero {
+    // margin-top: var(--h-top);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: max(400px,calc(100vh - var(--h-top)));
+        
+    display: flex;
+    align-items: self-end;
+    padding-bottom: 100px;
+
+    .titles {
+        display: grid;
+        place-content: start;
+        padding-inline: 1rem;
+    }
+
+    .h1 {
+        color: white;
+        font-size: var(--fs-999);
+        // font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
+        font-weight: var(--fw-900);
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+
+    .h2 {
+        color: white;
+        font-size: var(--fs-600);
+        // font-size: clamp(1.2rem, 0.9217rem + 1.3913vw, 2rem);
+        font-weight: var(--fw-900);
+        margin-bottom: 2rem;
+        line-height: 1.05;
+    }
+
+    .btn {
+        width: max-content;
+    }
+
+}

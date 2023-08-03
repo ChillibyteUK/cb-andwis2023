@@ -1,0 +1,47 @@
+$col-primary: #00A0DE;
+$col-dark: #00487C;
+$col-darkest: #0D0630;
+$col-highlight: #53DD6C;
+$col-grey: #FFF0F0;
+
+:root {
+
+    --hsl-col-green-900: 134 43% 18%;
+    --hsl-col-green-400: 157 100% 34%;
+    --hsl-col-green-200: 132 44% 77%;
+
+
+    --col-green-900: hsl(var(--hsl-col-green-900));
+    --col-green-400: hsl(var(--hsl-col-green-400));
+    --col-green-200: hsl(var(--hsl-col-green-200));
+
+    --col-grey-200: #e8ece8;
+
+    --h-top: 122px;
+
+    --fw-400: 300;
+    --fw-600: 400;
+    --fw-900: 600;
+
+    // --fs-200: 12px;
+    // --fs-300: 16px;
+    // --fs-400: 18px;
+    // --fs-500: 30px;
+    // --fs-600: 35px;
+    // --fs-700: 38px;
+    // --fs-800: 50px;
+    // --fs-900: 80px;
+
+    --fw-200: clamp(0.64rem, calc(0.61rem + 0.14vw), 0.72rem);
+    --fs-300: clamp(0.80rem, calc(0.77rem + 0.17vw), 0.90rem);
+    --fs-400: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
+    --fs-500: clamp(1.25rem, calc(1.20rem + 0.27vw), 1.41rem);
+    --fs-600: clamp(1.56rem, calc(1.49rem + 0.34vw), 1.76rem);
+    --fs-700: clamp(1.95rem, calc(1.87rem + 0.42vw), 2.20rem);
+    --fs-800: clamp(2.44rem, calc(2.33rem + 0.53vw), 2.75rem);
+    --fs-900: clamp(3.05rem, calc(2.92rem + 0.66vw), 3.43rem);
+    --fs-999: clamp(3.82rem, calc(3.65rem + 0.83vw), 4.29rem);
+
+
+    --transition: 0.2s ease-out;
+}

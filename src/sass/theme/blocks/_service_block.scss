@@ -1,0 +1,12 @@
+.service {
+    .companies {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        img {
+            max-width: 150px;
+            max-height: 50px;
+        }
+    }
+}

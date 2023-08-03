@@ -1,0 +1,60 @@
+
+#wrapper-navbar {
+
+    .navbar-toggler i {
+        color: var(--col-green-900);
+    }
+
+    .navbar {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        .collapsing {
+            transition: none;
+            display: none;
+        }
+
+        .nav-item {
+            &.current_page_item  {
+                a {
+                    color: var(--col-green-400);
+                }
+            }
+        }
+
+        background-color: white;
+        a {
+            color: var(--col-green-900);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: var(--fw-600);
+            &:hover {
+                color: var(--col-green-200);
+            }
+        }
+        
+        #navbar {
+            a {
+                padding-block: 0;
+            }
+            @media (max-width:767px) {
+                height: calc(100vh - var(--h-top));
+                .navbar-nav {
+                    height: 100%;
+                }
+                a {
+                    font-size: 1.2rem;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+    .logo {
+        background-image: url(../img/andwis-logo.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        aspect-ratio: 300 / 65;
+        width: 280px;
+    }
+
+}
