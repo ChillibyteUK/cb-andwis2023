@@ -23160,6 +23160,10 @@ header.hero .btn, header.hero .woocommerce-notices-wrapper .woocommerce-message 
   display: grid;
   place-content: center;
 }
+.service__icon {
+  max-width: 200px;
+  margin-inline: auto;
+}
 
 .companies .company:nth-last-of-type(even) {
   background-color: var(--col-grey-200);

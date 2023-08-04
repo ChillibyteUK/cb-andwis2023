@@ -7,7 +7,7 @@ $bg = get_field('background') == 'Grey' ? 'has-grey-background-color' : '';
     <div class="container-xl">
         <div class="row">
             <div class="col-md-2">
-                <img src="<?=get_stylesheet_directory_uri()?>/img/icons/icon__<?=$id?>--400.svg" alt="">
+                <img src="<?=get_stylesheet_directory_uri()?>/img/icons/icon__<?=$id?>--400.svg" alt="" class="service__icon">
             </div>
             <div class="col-md-10">
                 <h2 class="text-green-900 dot"><?=get_field('title')?></h2>
