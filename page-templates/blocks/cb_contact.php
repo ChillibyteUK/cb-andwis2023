@@ -2,7 +2,6 @@
     <div class="container-xl">
         <div class="row g-4">
             <div class="col-lg-6">
-                <h2><?=get_field('left_title')?></h2>
                 <p><?=get_field('left_intro')?></p>
                 <a class="contact__contact" href="tel:<?=parse_phone(get_field('contact_phone','options'))?>">
                     <div class="contact__icon"><p><i class="fa-solid fa-phone-alt"></i></p></div>

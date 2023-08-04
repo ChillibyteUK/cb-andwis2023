@@ -3,26 +3,6 @@
     "title": "CB Contact",
     "fields": [
         {
-            "key": "field_6480999a831d8",
-            "label": "Title",
-            "name": "left_title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_648099b0831d9",
             "label": "Intro",
             "name": "left_intro",
@@ -61,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1686149624
+    "modified": 1691143229
 }
