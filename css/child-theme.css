@@ -23156,6 +23156,37 @@ header.hero .btn, header.hero .woocommerce-notices-wrapper .woocommerce-message 
   max-width: 150px;
   max-height: 50px;
 }
+.service .companies a {
+  display: grid;
+  place-content: center;
+}
+
+.companies .company:nth-last-of-type(even) {
+  background-color: var(--col-grey-200);
+}
+.companies .company__services {
+  display: flex;
+  flex-wrap: wrap;
+}
+.companies .company__service {
+  width: max(130px, 33.3333333333%);
+  text-align: center;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-600);
+  padding-inline: 0.5rem;
+  text-decoration: none;
+  color: var(--col-green-900);
+}
+.companies .company__service img {
+  width: 100px;
+  height: 100px;
+  margin-inline: auto;
+  margin-bottom: 0.5rem;
+  transition: transform var(--transition);
+}
+.companies .company__service:hover img {
+  transform: scale(1.1);
+}
 
 .wp-block-quote--cb {
   position: relative;

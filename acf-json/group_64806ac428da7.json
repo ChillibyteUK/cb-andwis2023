@@ -170,7 +170,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
+            "layout": "block",
             "pagination": 0,
             "min": 0,
             "max": 0,
@@ -188,7 +188,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
@@ -209,7 +209,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
@@ -227,7 +227,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "33",
                         "class": "",
                         "id": ""
                     },
@@ -267,12 +267,33 @@
                         "access": "Building Access & Security"
                     },
                     "default_value": [],
-                    "return_format": "value",
+                    "return_format": "array",
                     "allow_custom": 0,
-                    "layout": "vertical",
+                    "layout": "horizontal",
                     "toggle": 0,
                     "save_custom": 0,
                     "custom_choice_button_text": "Add new choice",
+                    "parent_repeater": "field_64cb72564e33f"
+                },
+                {
+                    "key": "field_64ccb12b6e01b",
+                    "label": "Company Detail",
+                    "name": "company_detail",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
                     "parent_repeater": "field_64cb72564e33f"
                 }
             ]
@@ -341,5 +362,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691076070
+    "modified": 1691137505
 }

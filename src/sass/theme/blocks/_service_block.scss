@@ -8,5 +8,9 @@
             max-width: 150px;
             max-height: 50px;
         }
+        a {
+            display: grid;
+            place-content: center;
+        }
     }
 }
