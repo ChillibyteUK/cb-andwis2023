@@ -11,7 +11,7 @@ get_header();
 ?>
 <main id="main" class="blog_index">
     <div class="container-xl py-5">
-        <h1 class="text-green-900 dot">Andwis News</h1>
+        <h1 class="text-green-900 dot">andwis news</h1>
         <?php
         if (get_the_content(null, false, $page_for_posts)) {
             echo '<div class="mb-5">' . get_the_content(null, false, $page_for_posts) . '</div>';
