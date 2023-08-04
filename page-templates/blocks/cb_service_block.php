@@ -10,7 +10,7 @@ $bg = get_field('background') == 'Grey' ? 'has-grey-background-color' : '';
                 <img src="<?=get_stylesheet_directory_uri()?>/img/icons/icon__<?=$id?>--400.svg" alt="">
             </div>
             <div class="col-md-10">
-                <h2 class="h3 text-green-900 dot"><?=get_field('title')?></h2>
+                <h2 class="text-green-900 dot"><?=get_field('title')?></h2>
                 <?=get_field('content')?>
                 <?php
                 $companies = get_field('andwis','options');
