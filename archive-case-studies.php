@@ -6,14 +6,11 @@ get_header();
 ?>
 <!-- hero -->
 <main id="main" class="caseStudies">
-    <header class="hero hero--short">
-        <div class="hero_bg" style="background-image: url(/wp-content/uploads/2023/01/hero-home.jpg)"></div>
-        <div class="container-xl">
-            <h1>Read our <span>Case Studies</span></h1>
-            <div class="mw-md-75 text-center"></div>
-        </div>
+    <header class="container-xl ">
+            <h1 class="pt-5 mb-4 text-green-900 dot">Our case studies</h1>
     </header>
     <div class="container-xl pb-5">
+        <?php /*
         <div class="mb-4" id="filters">
             <?php
         $terms = get_terms(
@@ -41,45 +38,17 @@ foreach ($terms as $term) {
                 </div>
                 <?php
 }
+
 ?>
             </div>
-            <!-- hr>
-            <?php
-        $terms = get_terms(
-    array(
-                'taxonomy'   => 'locations',
-                'hide_empty' => true,
-                'order' => 'DESC',
-            )
-);
-?>
-            <div class="option-set mb-2" data-group="location">
-                <div class="form-check">
-                    <input type="checkbox" value="" id="loca-all" class="form-check-input all" checked>
-                    <label for="loca-all" class="form-check-label">All Locations</label>
-                </div>
-                <?php
-foreach ($terms as $term) {
-    ?>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input"
-                        value=".<?=$term->slug?>"
-                        id="<?=$term->slug?>">
-                    <label for="<?=$term->slug?>"
-                        class="form-check-label"><?=$term->name?></label>
-                </div>
-                <?php
-}
-?>
-            </div -->
             <div class="status">
                 <div class="count"><span class="filter-count"></span> items found.</div>
             </div>
         </div>
-
         <p id="filter-display"></p>
+        <?php */ ?>
 
-        <div class="w-100" id="grid">
+        <div class="caseStudies__grid" id="grid">
             <?php
     while (have_posts()) {
         the_post();
@@ -87,86 +56,26 @@ foreach ($terms as $term) {
         if (!$img) {
             $img = get_stylesheet_directory_uri() . '/img/default.png';
         }
-        $types = get_the_terms($post->ID, 'cstypes');
-        $type = wp_list_pluck($types, 'name');
-        $catclass = implode(' ', array_map('cbslugify', $type));
+        // $types = get_the_terms($post->ID, 'cstypes');
+        // $type = wp_list_pluck($types, 'name');
+        // $catclass = implode(' ', array_map('cbslugify', $type));
 
-        $types = get_the_terms($post->ID, 'locations');
-        $type = wp_list_pluck($types, 'name');
-        $catclass .= ' ' . implode(' ', array_map('cbslugify', $type));
+        // $types = get_the_terms($post->ID, 'locations');
+        // $type = wp_list_pluck($types, 'name');
+        // $catclass .= ' ' . implode(' ', array_map('cbslugify', $type));
+
+        $catclass;
 
         $the_date = get_the_date('jS F, Y');
 
         $slug = acf_slugify(basename(get_the_permalink()));
         ?>
-            <div class="<?=$catclass?> caseStudy w-100 mb-4">
-                <a class="anchor" id="<?=$slug?>"></a>
-                <div class="caseStudy_card">
-                    <div class="caseStudy_card__image">
-                        <img src="<?=$img?>" alt="">
-                    </div>
-                    <div class="caseStudy_card__content">
-                        <div class="article-title mb-2">
-                            <?=get_the_title()?>
-                        </div>
-                        <div class="article-body">
-                            <?=get_the_content()?>
-                        </div>
-                        <?php
-                    if (get_field('quote')) {
-                        ?>
-                        <div class="quote-container">
-                            <div class="article-quote">
-                                <?=apply_filters('the_content', get_field('quote'))?>
-                            </div>
-                            <?php
-                        if (get_field('attribution')) {
-                            ?>
-                            <div class="article-attrib">
-                                <?=get_field('attribution')?>
-                            </div>
-                            <?php
-                        }
-                        ?>
-                        </div>
-                        <?php
-                    }
-        ?>
-                        <div class="article-highlights">
-                            <?php
-            $hl = get_field('highlights');
-        if ($hl['offered'] ?? null) {
-            ?>
-                            <div>
-                                <img decoding="async" src="/wp-content/uploads/2023/01/icon__free-cash-offer.svg"
-                                    width="60" height="40">
-                                <span><?=$hl['offered']?></span>
-                            </div>
-                            <?php
-        }
-        if ($hl['duration'] ?? null) {
-            ?>
-                            <div>
-                                <img decoding="async" src="/wp-content/uploads/2023/02/icon__complete.svg" width="60"
-                                    height="40">
-                                <span><?=$hl['duration']?></span>
-                            </div>
-                            <?php
-        }
-        if ($hl['price'] ?? null) {
-            ?>
-                            <div>
-                                <img decoding="async" src="/wp-content/uploads/2023/01/icon__no-fees.svg" width="60"
-                                    height="40">
-                                <span><?=$hl['price']?></span>
-                            </div>
-                            <?php
-        }
-        ?>
-                        </div>
-                    </div>
+            <a href="<?=get_the_permalink(get_the_ID())?>" class="caseStudies__card">
+                <img class="caseStudies__image" src="<?=get_the_post_thumbnail_url(get_the_ID(),'large')?>">
+                <div class="caseStudies__content">
+                    <h3 class="caseStudies__title"><?=get_the_title()?></h3>
                 </div>
-            </div>
+            </a>
             <?php
     }
 ?>
@@ -174,6 +83,7 @@ foreach ($terms as $term) {
     </div>
 </main>
 <?php
+/*
 add_action('wp_footer', function () {
     ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
@@ -299,6 +209,7 @@ add_action('wp_footer', function () {
 </script>
 <?php
 }, 9999);
+*/
 
 get_footer();
 ?>
