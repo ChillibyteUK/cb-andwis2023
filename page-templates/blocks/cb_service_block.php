@@ -18,7 +18,7 @@ $bg = get_field('background') == 'Grey' ? 'has-grey-background-color' : '';
                     echo '<div class="companies mt-4">';
                     foreach ($companies as $c) {
                         foreach ($c['services'] as $s) {
-                            if ($s == $id) {
+                            if ($s['value'] == $id) {
                             ?>
                     <a href="<?=$c['site_url']?>" target="_blank">
                         <img src="<?=wp_get_attachment_image_url($c['logo'],'large')?>" alt="">
