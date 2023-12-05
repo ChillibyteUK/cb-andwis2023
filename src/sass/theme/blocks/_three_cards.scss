@@ -1,12 +1,12 @@
 .three_cards {
     &__card {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
         height: 100%;
         font-weight: var(--fw-600);
         display: grid;
         grid-template-rows: auto 1fr;
         img {
-            max-width: 100px;
+            max-width: 80px;
             display: block;
             margin-left: auto;
         }
