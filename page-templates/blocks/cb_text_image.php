@@ -8,9 +8,9 @@ switch ($colour) {
     case 'Mid':
         $background = 'has-grey-background-color';
         break;
-    // case 'Light':
-    //     $background = '';
-    //     break;
+        // case 'Light':
+        //     $background = '';
+        //     break;
 }
 
 $breakout = '';
@@ -34,35 +34,45 @@ if (get_field('split') == '7030') {
 $orderText = 'order-2 order-md-1';
 $orderImage = 'order-1 order-md-2';
 
-if (get_field('order') == 'image-text') {
+if (get_field('order') == 'image') {
     $orderText = 'order-2 order-md-2';
     $orderImage = 'order-1 order-md-1';
 }
 ?>
 <section class="text_image <?=$breakout?>">
     <div class="container-xl <?=$background?> py-5">
-        <div class="d-lg-none"><h2 class="dot text-green-900"><?=get_field('title')?></h2></div>
+        <div class="d-lg-none">
+            <h2 class="dot text-green-900">
+                <?=get_field('title')?></h2>
+        </div>
         <div class="row align-items-center g-4">
-            <div class="<?=$splitText?> <?=$orderText?>">
-                <h2 class="dot d-none d-lg-block text-green-900 mb-4"><?=get_field('title')?></h2>
+            <div
+                class="<?=$splitText?> <?=$orderText?>">
+                <h2 class="dot d-none d-lg-block text-green-900 mb-4">
+                    <?=get_field('title')?></h2>
                 <?php
                 if (get_field('subtitle')) {
                     ?>
-                    <h3 class="text-green-400 mb-4"><?=get_field('subtitle')?></h3>
-                    <?php
-                }
-                ?>
-                <div><?=get_field('content')?></div>
+                <h3 class="text-green-400 mb-4">
+                    <?=get_field('subtitle')?>
+                </h3>
                 <?php
-                if (get_field('cta')) {
-                    $link = get_field('cta');
-                    ?>
-                    <a href="<?=$link['url']?>" class="btn btn--accent"><?=$link['title']?></a>
-                    <?php
                 }
-                ?>
+?>
+                <div><?=get_field('content')?>
+                </div>
+                <?php
+if (get_field('cta')) {
+    $link = get_field('cta');
+    ?>
+                <a href="<?=$link['url']?>"
+                    class="btn btn--accent"><?=$link['title']?></a>
+                <?php
+}
+?>
             </div>
-            <div class="<?=$splitImage?> <?=$orderImage?> text-center">
+            <div
+                class="<?=$splitImage?> <?=$orderImage?> text-center">
                 <?=wp_get_attachment_image(get_field('image'), 'large', null, array('class' => 'text_image__image'))?>
             </div>
         </div>
