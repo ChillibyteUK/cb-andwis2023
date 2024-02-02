@@ -23140,6 +23140,22 @@ header.hero .btn, header.hero .woocommerce-notices-wrapper .woocommerce-message 
   width: auto;
 }
 
+.clients_grid__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.clients_grid__logo {
+  width: 100px;
+  display: grid;
+  place-content: center;
+}
+.clients_grid__logo img {
+  filter: grayscale(1);
+}
+
 .latest_news__grid {
   display: grid;
   gap: 1rem;

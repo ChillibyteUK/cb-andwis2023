@@ -75,6 +75,15 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
         acf_register_block_type(array(
+            'name'				=> 'cb_clients_grid',
+            'title'				=> __('CB Clients Grid'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_clients_grid.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
             'name'				=> 'cb_latest_news',
             'title'				=> __('CB Latest News'),
             'category'			=> 'layout',

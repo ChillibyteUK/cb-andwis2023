@@ -1,0 +1,17 @@
+.clients_grid {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo {
+        width: 100px;
+        display: grid;
+        place-content: center;
+        img {
+            filter: grayscale(1);
+        }
+    }
+}
