@@ -3,14 +3,16 @@
         <h2 class="h3 text-green-900 dot mb-5">Our Andwis Group Companies</h2>
         <div class="andwis_companies_grid__grid mb-4">
             <?php
-        while (have_rows('andwis', 'options')) {
-            the_row();
-            ?>
+        if (have_rows('andwis', 'options')) {
+            while (have_rows('andwis', 'options')) {
+                the_row();
+                ?>
             <div class="andwis_companies_grid__logo">
                 <img src="<?= wp_get_attachment_image_url(get_sub_field('logo'), 'large')?>"
                     alt="<?=get_sub_field('name')?>">
             </div>
             <?php
+            }
         }
             ?>
         </div>

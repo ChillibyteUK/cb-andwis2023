@@ -3,14 +3,16 @@
         <h2 class="h3 text-green-900 dot mb-4">Our Clients</h2>
         <div class="clients__slider mb-5">
             <?php
-        foreach (get_field('logos', 'options') as $l) {
-            ?>
+            if (get_field('logos', 'options') ?? null) {
+                foreach (get_field('logos', 'options') as $l) {
+                    ?>
             <div class="clients__card">
                 <img src="<?= wp_get_attachment_image_url($l, 'large')?>"
                     alt="">
             </div>
             <?php
-        }
+                }
+            }
             ?>
         </div>
         <div class="text-center">
