@@ -25,17 +25,12 @@
             <a href="/what-we-do/#fire" class="services_nav__item">
                 <img src="<?=get_stylesheet_directory_uri()?>/img/icons/icon__fire--400.svg"
                     alt="">
-                Fire Protection
-            </a>
-            <a href="/what-we-do/#water" class="services_nav__item">
-                <img src="<?=get_stylesheet_directory_uri()?>/img/icons/icon__water--400.svg"
-                    alt="">
-                Water Treatment
+                Fire & Security
             </a>
             <a href="/what-we-do/#access" class="services_nav__item">
                 <img src="<?=get_stylesheet_directory_uri()?>/img/icons/icon__access--400.svg"
                     alt="">
-                Building Access & Security
+                Entrance & Access
             </a>
         </div>
     </div>
