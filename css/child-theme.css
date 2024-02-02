@@ -23004,7 +23004,7 @@ header.hero .btn, header.hero .woocommerce-notices-wrapper .woocommerce-message 
 
 .text_image__image {
   width: 100%;
-  aspect-ratio: 5/4;
+  aspect-ratio: 16/9;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
