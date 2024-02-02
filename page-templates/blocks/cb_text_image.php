@@ -38,9 +38,12 @@ if (get_field('order') == 'image') {
     $orderText = 'order-2 order-md-2';
     $orderImage = 'order-1 order-md-1';
 }
+
+$classes = $block['className'] ?? 'py-5';
 ?>
 <section class="text_image <?=$breakout?>">
-    <div class="container-xl <?=$background?> py-5">
+    <div
+        class="container-xl <?=$background?>  <?=$classes?>">
         <div class="d-lg-none">
             <h2 class="dot text-green-900">
                 <?=get_field('title')?>
