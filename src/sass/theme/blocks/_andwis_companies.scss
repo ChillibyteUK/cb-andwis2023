@@ -15,3 +15,20 @@
         }
     }
 }
+
+.andwis_companies_grid {
+    background-color: var(--col-grey-200);
+    &__grid {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo {
+        width: 200px;
+        display: grid;
+        place-content: center;
+        filter: grayscale(1);
+    }
+}

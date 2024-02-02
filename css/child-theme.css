@@ -23125,6 +23125,23 @@ header.hero .btn, header.hero .woocommerce-notices-wrapper .woocommerce-message 
   width: auto;
 }
 
+.andwis_companies_grid {
+  background-color: var(--col-grey-200);
+}
+.andwis_companies_grid__grid {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.andwis_companies_grid__logo {
+  width: 200px;
+  display: grid;
+  place-content: center;
+  filter: grayscale(1);
+}
+
 .clients__card {
   border-left: 1px solid white;
   border-right: 1px solid white;
