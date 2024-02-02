@@ -56,8 +56,7 @@ $classes = $block['className'] ?? 'py-5';
                 if (get_field('title')) {
                     ?>
                 <h2 class="dot d-none d-lg-block text-green-900 mb-4">
-                    <?=get_field('title')?>
-                </h2>
+                    <?=get_field('title')?></h2>
                 <?php
                 }
                 if (get_field('subtitle')) {
