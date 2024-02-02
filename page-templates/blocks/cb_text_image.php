@@ -43,14 +43,20 @@ if (get_field('order') == 'image') {
     <div class="container-xl <?=$background?> py-5">
         <div class="d-lg-none">
             <h2 class="dot text-green-900">
-                <?=get_field('title')?></h2>
+                <?=get_field('title')?>
+            </h2>
         </div>
         <div class="row align-items-center g-4">
             <div
                 class="<?=$splitText?> <?=$orderText?>">
-                <h2 class="dot d-none d-lg-block text-green-900 mb-4">
-                    <?=get_field('title')?></h2>
                 <?php
+                if (get_field('title')) {
+                    ?>
+                <h2 class="dot d-none d-lg-block text-green-900 mb-4">
+                    <?=get_field('title')?>
+                </h2>
+                <?php
+                }
                 if (get_field('subtitle')) {
                     ?>
                 <h3 class="text-green-400 mb-4">
