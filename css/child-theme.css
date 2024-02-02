@@ -23040,14 +23040,14 @@ header.hero .btn, header.hero .woocommerce-notices-wrapper .woocommerce-message 
 }
 
 .three_cards__card {
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
   height: 100%;
   font-weight: var(--fw-600);
   display: grid;
   grid-template-rows: auto 1fr;
 }
 .three_cards__card img {
-  max-width: 100px;
+  max-width: 80px;
   display: block;
   margin-left: auto;
 }
@@ -23073,7 +23073,7 @@ header.hero .btn, header.hero .woocommerce-notices-wrapper .woocommerce-message 
 }
 @media (min-width: 1400px) {
   .services_nav__container {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 .services_nav__item {
