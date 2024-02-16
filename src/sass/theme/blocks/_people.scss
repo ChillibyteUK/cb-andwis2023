@@ -1,0 +1,26 @@
+.people {
+    &__card {
+        margin-bottom: 1rem;
+    }
+    &__image {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        margin-bottom: 0.25rem;
+    }
+    &__name {
+        text-align: center;
+        font-size: var(--fs-400);
+        font-weight: var(--fw-900);
+        color: var(--col-green-900);
+        text-wrap: balance;
+        &::after {
+            content: ".";
+            color: var(--col-green-400);
+        }
+    }
+    &__role {
+        font-size: var(--fs-300);
+        text-align: center;
+    }
+}

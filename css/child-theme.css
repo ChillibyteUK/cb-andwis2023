@@ -23272,6 +23272,32 @@ header.hero .btn, header.hero .woocommerce-notices-wrapper .woocommerce-message 
   transform: scale(1.1);
 }
 
+.people__card {
+  margin-bottom: 1rem;
+}
+.people__image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 0.25rem;
+}
+.people__name {
+  text-align: center;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-900);
+  color: var(--col-green-900);
+  text-wrap: balance;
+}
+.people__name::after {
+  content: ".";
+  color: var(--col-green-400);
+}
+.people__role {
+  font-size: var(--fs-300);
+  text-align: center;
+}
+
 .wp-block-quote--cb {
   position: relative;
   z-index: 0;
