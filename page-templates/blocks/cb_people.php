@@ -4,7 +4,7 @@ $q = new WP_Query(array(
     'posts_per_page' => -1,
 ));
 ?>
-<section class="people">
+<section class="people pb-5">
     <div class="container-xl">
         <div class="row g-4">
             <?php
